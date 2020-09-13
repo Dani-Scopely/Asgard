@@ -1,5 +1,4 @@
 ﻿using System;
-using MySqlConnector;
 
 namespace Shared.Models
 {
@@ -22,19 +21,6 @@ namespace Shared.Models
             Level = level;
             Sound = sound;
             Music = music;
-        }
-
-        public ProfileDto Build(MySqlDataReader reader)
-        {
-            var profile = new ProfileDto
-            {
-                UserId = reader.GetString(0),
-                Level = reader.GetInt32(1),
-                Sound = reader.GetBoolean(2),
-                Music = reader.GetBoolean(3)
-            };
-
-            return profile;
         }
     }
 }

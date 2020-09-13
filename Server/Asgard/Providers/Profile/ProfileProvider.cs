@@ -24,7 +24,13 @@ namespace Asgard.Providers.Profile
 
             reader.Read();
 
-            var result = new ProfileDto().Build(reader);
+            var result = new ProfileDto
+            {
+                UserId = reader.GetString(0),
+                Level = reader.GetInt32(1),
+                Sound = reader.GetBoolean(2),
+                Music = reader.GetBoolean(3)
+            };
             
             Close();
 

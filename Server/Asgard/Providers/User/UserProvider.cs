@@ -25,7 +25,13 @@ namespace Asgard.Providers.User
 
             while (reader.Read())
             {
-                listUsers.Add(new UserDto().Build(reader));
+                listUsers.Add(new UserDto
+                {
+                    Id = reader.GetString(0),
+                    Username = reader.GetString(1),
+                    Password = reader.GetString(2),
+                    Created = reader.GetDateTime(3)
+                });
             }
 
             Close();
@@ -46,7 +52,13 @@ namespace Asgard.Providers.User
 
             reader.Read();
 
-            var result = new UserDto().Build(reader);
+            var result = new UserDto
+            {
+                Id = reader.GetString(0),
+                Username = reader.GetString(1),
+                Password = reader.GetString(2),
+                Created = reader.GetDateTime(3)
+            };
             
             Close();
             

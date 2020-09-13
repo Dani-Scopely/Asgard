@@ -1,0 +1,13 @@
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\obj\Debug\netcoreapp3.1\Asgard SDK.csprojAssemblyReference.cache
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\obj\Debug\netcoreapp3.1\Asgard SDK.AssemblyInfoInputs.cache
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\obj\Debug\netcoreapp3.1\Asgard SDK.AssemblyInfo.cs
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\obj\Debug\netcoreapp3.1\Asgard SDK.csproj.CoreCompileInputs.cache
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\bin\Debug\netcoreapp3.1\Asgard SDK.exe
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\bin\Debug\netcoreapp3.1\Asgard SDK.deps.json
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\bin\Debug\netcoreapp3.1\Asgard SDK.runtimeconfig.json
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\bin\Debug\netcoreapp3.1\Asgard SDK.runtimeconfig.dev.json
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\bin\Debug\netcoreapp3.1\Asgard SDK.dll
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\bin\Debug\netcoreapp3.1\Asgard SDK.pdb
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\obj\Debug\netcoreapp3.1\Asgard SDK.dll
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\obj\Debug\netcoreapp3.1\Asgard SDK.pdb
+C:\Users\Dani\Documents\Games\Asgard\Server\Asgard SDK\obj\Debug\netcoreapp3.1\Asgard SDK.genruntimeconfig.cache
