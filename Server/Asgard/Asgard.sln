@@ -1,0 +1,22 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asgard", "Asgard\Asgard.csproj", "{87DA3F2D-9D23-4AA2-8876-B7A9636C5CB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Shared", "Shared\Shared.csproj", "{FE25B021-6145-4F21-BB20-8C6D0E042810}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{87DA3F2D-9D23-4AA2-8876-B7A9636C5CB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{87DA3F2D-9D23-4AA2-8876-B7A9636C5CB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{87DA3F2D-9D23-4AA2-8876-B7A9636C5CB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{87DA3F2D-9D23-4AA2-8876-B7A9636C5CB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE25B021-6145-4F21-BB20-8C6D0E042810}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE25B021-6145-4F21-BB20-8C6D0E042810}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE25B021-6145-4F21-BB20-8C6D0E042810}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE25B021-6145-4F21-BB20-8C6D0E042810}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

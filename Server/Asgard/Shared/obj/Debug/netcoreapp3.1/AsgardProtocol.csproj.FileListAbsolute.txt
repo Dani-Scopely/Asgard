@@ -1,0 +1,9 @@
+C:\Users\Dani\Documents\Games\Asgard\Backend\Asgard\AsgardProtocol\obj\Debug\netcoreapp3.1\AsgardProtocol.csprojAssemblyReference.cache
+C:\Users\Dani\Documents\Games\Asgard\Backend\Asgard\AsgardProtocol\obj\Debug\netcoreapp3.1\AsgardProtocol.AssemblyInfoInputs.cache
+C:\Users\Dani\Documents\Games\Asgard\Backend\Asgard\AsgardProtocol\obj\Debug\netcoreapp3.1\AsgardProtocol.AssemblyInfo.cs
+C:\Users\Dani\Documents\Games\Asgard\Backend\Asgard\AsgardProtocol\obj\Debug\netcoreapp3.1\AsgardProtocol.csproj.CoreCompileInputs.cache
+C:\Users\Dani\Documents\Games\Asgard\Backend\Asgard\AsgardProtocol\bin\Debug\netcoreapp3.1\AsgardProtocol.deps.json
+C:\Users\Dani\Documents\Games\Asgard\Backend\Asgard\AsgardProtocol\bin\Debug\netcoreapp3.1\AsgardProtocol.dll
+C:\Users\Dani\Documents\Games\Asgard\Backend\Asgard\AsgardProtocol\bin\Debug\netcoreapp3.1\AsgardProtocol.pdb
+C:\Users\Dani\Documents\Games\Asgard\Backend\Asgard\AsgardProtocol\obj\Debug\netcoreapp3.1\AsgardProtocol.dll
+C:\Users\Dani\Documents\Games\Asgard\Backend\Asgard\AsgardProtocol\obj\Debug\netcoreapp3.1\AsgardProtocol.pdb
