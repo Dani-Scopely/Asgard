@@ -6,6 +6,21 @@ namespace Asgard_SDK.SDK.Services.Network.GRPC
 {
     public class GRPCTransport : INetworkTransport
     {
+        public GRPCTransport()
+        {
+            
+        }
+        
+        public void Open()
+        {
+            throw new NotImplementedException();
+        }
+
+        public void Close()
+        {
+            throw new NotImplementedException();
+        }
+        
         public BaseResponse Send(BaseRequest request)
         {
             throw new NotImplementedException();

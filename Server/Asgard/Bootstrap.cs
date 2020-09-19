@@ -1,11 +1,19 @@
-﻿namespace Asgard
+﻿using System;
+using Asgard.Server;
+
+namespace Asgard
 {
-    class Bootstrap
+    internal static class Bootstrap
     {
-        static void Main(string[] args)
+        public static void Main(string[] args)
         {
+            var ss = new ServerHandler();
+            ss.Start();
+
+            while (ss.IsRunning) {}
+
             
-            
+            Console.WriteLine("bye bye");
         }
     }
 }

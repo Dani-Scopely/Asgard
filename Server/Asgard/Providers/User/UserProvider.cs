@@ -8,8 +8,8 @@ namespace Asgard.Providers.User
 {
     public class UserProvider : BaseProvider, IUserProvider
     {
-        private const string SqlGetUsersCommand = "SELECT * FROM Users";
-        private const string SqlGetUserCommand = "SELECT * FROM Users WHERE id = @id";
+        private const string SqlGetUsersCommand   = "SELECT * FROM Users";
+        private const string SqlGetUserCommand    = "SELECT * FROM Users WHERE id = @id";
         private const string SqlInsertUserCommand = "INSERT INTO Users (id,username,password) VALUES (@id,@username,@password)";
         private const string SqlDeleteUserCommand = "DELETE FROM Users WHERE id = @id";
         private const string SqlUpdateUserCommand = "UPDATE Users SET username = @username, password = @password WHERE id = @id";
@@ -70,11 +70,22 @@ namespace Asgard.Providers.User
             Open();
             
             var cmd = new MySqlCommand(SqlInsertUserCommand, _connection);
+            
             cmd.Parameters.AddWithValue("id", user.Id);
             cmd.Parameters.AddWithValue("username", user.Username);
             cmd.Parameters.AddWithValue("password", user.Password);
+
+            var result = 0;
             
-            var result = cmd.ExecuteNonQuery();
+            try
+            {
+                result = cmd.ExecuteNonQuery();
+            }
+            catch (MySqlException e)
+            {
+                if (!e.Message.Contains("Duplicate entry"))
+                    return null;
+            }
 
             Close();
             

@@ -13,19 +13,88 @@
     </ItemGroup>
 
     <ItemGroup>
-      <Compile Include="..\..\Shared\Models\ProfileDto.cs">
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Models.meta">
+        <Link>Shared\Models.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Models\ProfileDto.cs.meta">
+        <Link>Shared\Models\ProfileDto.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Models\UserDto.cs.meta">
+        <Link>Shared\Models\UserDto.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol.meta">
+        <Link>Shared\Protocol.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Request.meta">
+        <Link>Shared\Protocol\Request.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Request\BaseRequest.cs.meta">
+        <Link>Shared\Protocol\Request\BaseRequest.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Request\LoginRequest.cs.meta">
+        <Link>Shared\Protocol\Request\LoginRequest.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Response.meta">
+        <Link>Shared\Protocol\Response.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Response\BaseResponse.cs.meta">
+        <Link>Shared\Protocol\Response\BaseResponse.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Response\LoginResponse.cs.meta">
+        <Link>Shared\Protocol\Response\LoginResponse.cs.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Utilities.meta">
+        <Link>Shared\Utilities.meta</Link>
+      </Content>
+      <Content Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Utilities\Utils.cs.meta">
+        <Link>Shared\Utilities\Utils.cs.meta</Link>
+      </Content>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Models\CurrencyDto.cs">
+        <Link>Shared\Models\CurrencyDto.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Models\Game\WorldDto.cs">
+        <Link>Shared\Models\Game\WorldDto.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Models\ProfileDto.cs">
         <Link>Shared\Models\ProfileDto.cs</Link>
       </Compile>
-      <Compile Include="..\..\Shared\Models\UserDto.cs">
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Models\UserDto.cs">
         <Link>Shared\Models\UserDto.cs</Link>
       </Compile>
-      <Compile Include="..\..\Shared\Protocol\Request\BaseRequest.cs">
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Request\BaseRequest.cs">
         <Link>Shared\Protocol\Request\BaseRequest.cs</Link>
       </Compile>
-      <Compile Include="..\..\Shared\Protocol\Response\BaseResponse.cs">
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Request\Game\GetWorldsRequest.cs">
+        <Link>Shared\Protocol\Request\Game\GetWorldsRequest.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Request\Game\JoinWorldRequest.cs">
+        <Link>Shared\Protocol\Request\Game\JoinWorldRequest.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Request\LoginRequest.cs">
+        <Link>Shared\Protocol\Request\LoginRequest.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Response\BaseResponse.cs">
         <Link>Shared\Protocol\Response\BaseResponse.cs</Link>
       </Compile>
-      <Compile Include="..\..\Shared\Utilities\Utils.cs">
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Response\Game\GetWorldsResponse.cs">
+        <Link>Shared\Protocol\Response\Game\GetWorldsResponse.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Response\Game\JoinWorldResponse.cs">
+        <Link>Shared\Protocol\Response\Game\JoinWorldResponse.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Response\Game\OnEconomyResponse.cs">
+        <Link>Shared\Protocol\Response\Game\OnEconomyResponse.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Response\Game\OnTimeResponse.cs">
+        <Link>Shared\Protocol\Response\Game\OnTimeResponse.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Protocol\Response\LoginResponse.cs">
+        <Link>Shared\Protocol\Response\LoginResponse.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Client\Asgard\Assets\Asgard SDK\Shared\Utilities\Utils.cs">
         <Link>Shared\Utilities\Utils.cs</Link>
       </Compile>
     </ItemGroup>

@@ -8,5 +8,8 @@ namespace Asgard_SDK.SDK.Services.Network
     {
         BaseResponse Send(BaseRequest request);
         void Receive(Action<BaseResponse> response);
+
+        void Open();
+        void Close();
     }
 }

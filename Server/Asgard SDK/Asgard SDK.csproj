@@ -16,8 +16,14 @@
       <Compile Include="..\..\Shared\Protocol\Request\BaseRequest.cs">
         <Link>Shared\Protocol\Request\BaseRequest.cs</Link>
       </Compile>
+      <Compile Include="..\..\Shared\Protocol\Request\LoginRequest.cs">
+        <Link>Shared\Protocol\Request\LoginRequest.cs</Link>
+      </Compile>
       <Compile Include="..\..\Shared\Protocol\Response\BaseResponse.cs">
         <Link>Shared\Protocol\Response\BaseResponse.cs</Link>
+      </Compile>
+      <Compile Include="..\..\Shared\Protocol\Response\LoginResponse.cs">
+        <Link>Shared\Protocol\Response\LoginResponse.cs</Link>
       </Compile>
       <Compile Include="..\..\Shared\Utilities\Utils.cs">
         <Link>Shared\Utilities\Utils.cs</Link>
