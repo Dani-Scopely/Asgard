@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Timers;
+using Asgard.Commands.Database;
+using Asgard.Providers.Game.World;
 using Asgard.Queue;
 using Shared.Models.Game;
 using Shared.Protocol.Response.Game;
@@ -13,6 +15,7 @@ namespace Asgard.Systems
         private List<string> _clientIds;
         private WorldDto _world;
         private long _hour = 0;
+        private UpdateWorldDatabaseCommand _updateWorldCommand;
         
         public WorldSystem(WorldDto world)
         {
@@ -22,20 +25,21 @@ namespace Asgard.Systems
             _timer.Elapsed += OnTimedEvent;
             _timer.AutoReset = true;
             _timer.Enabled = true;
+            _updateWorldCommand = new UpdateWorldDatabaseCommand();
         }
 
         public void Register(string id)
         {
-            Console.WriteLine("R _clientIds: "+_clientIds.Count);
             _clientIds.Add(id);
-            Console.WriteLine("R _clientIds: "+_clientIds.Count);
+            _world.numUsers = _clientIds.Count;
+            _updateWorldCommand.Build(_world).Execute();
         }
 
         public void Unregister(string id)
         {
-            Console.WriteLine("UNR _clientIds: "+_clientIds.Count);
             _clientIds.Remove(id);
-            Console.WriteLine("UNR _clientIds: "+_clientIds.Count);
+            _world.numUsers = _clientIds.Count;
+            _updateWorldCommand.Build(_world).Execute();
         }
 
         public WorldDto GetWorld()

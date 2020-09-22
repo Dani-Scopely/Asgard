@@ -1,4 +1,5 @@
 ﻿using System;
+using Asgard.Configuration;
 using Asgard.Server;
 
 namespace Asgard
@@ -7,6 +8,8 @@ namespace Asgard
     {
         public static void Main(string[] args)
         {
+            ServerConfig.Build(args);
+            
             var ss = new ServerHandler();
             ss.Start();
 

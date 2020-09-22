@@ -33,7 +33,6 @@ namespace Asgard.Queue
 
         public void Queue(string id, BaseResponse response)
         {
-            Console.WriteLine("Enqueing : "+response.GetType());
             if(!_clientHandlers.ContainsKey(id))
                 throw new Exception("This client is not registered");
 

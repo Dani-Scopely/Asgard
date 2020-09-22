@@ -47,6 +47,8 @@ namespace Asgard_SDK.SDK.Services
         
         public void Login(UserDto user, Action<UserDto> response)
         {
+            Debug.Log(("sending login"));
+            
             _onLoginResponse = response;
             _networkService.Send(new LoginRequest { User =  user}); 
         }

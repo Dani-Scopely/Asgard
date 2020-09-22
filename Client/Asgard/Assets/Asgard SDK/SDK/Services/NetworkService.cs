@@ -13,9 +13,12 @@ namespace Asgard_SDK.SDK.Services
         
         private WebSocket _webSocket;
 
+        private Action<bool> _onNetworkServiceReady;
+        
         private void OnWebsocketOpen(WebSocket websocket)
         {
             Debug.Log("WebSocket connected: "+websocket);
+            _onNetworkServiceReady.Invoke(true);
         }
 
         private void OnWebsocketMessageReceived(WebSocket webSocket, string message)
@@ -34,12 +37,13 @@ namespace Asgard_SDK.SDK.Services
             }
         }
 
-        public void Init()
+        public void Init(Action<bool> onNetworkServiceReady)
         {
+            _onNetworkServiceReady = onNetworkServiceReady;
             _webSocket = new WebSocket(new Uri("ws://127.0.0.1:9000"));
             _webSocket.OnOpen += OnWebsocketOpen;
             _webSocket.OnMessage += OnWebsocketMessageReceived;
-            _webSocket.Open();    
+            _webSocket.Open();
         }
         
         public void Send(BaseRequest request)

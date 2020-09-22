@@ -11,14 +11,16 @@ namespace Asgard_SDK.SDK
 {
     public class AsgardSDK : MonoBehaviour
     {
-        private AsgardBootstrap _bootstrap;
-        
         private void Awake()
         {
-            _bootstrap = new AsgardBootstrap(); 
-            Debug.Log("Asgard SDK Loaded");
+            //_bootstrap = new AsgardBootstrap(); 
+            //Debug.Log("Asgard SDK Loaded");
         }
 
+        private void Init()
+        {
+            
+        }
         private void Update()
         {
             if (Input.GetKeyUp(KeyCode.K))
@@ -30,10 +32,12 @@ namespace Asgard_SDK.SDK
                     });
             }
 
+            /*
             if (Input.GetKeyUp(KeyCode.A))
             {
                 ServiceFactory.Instance.Get<WorldService>().GetWorlds(new GetWorldsRequest());
             }
+            */
 
             if (Input.GetKeyUp(KeyCode.B))
             {
@@ -43,16 +47,6 @@ namespace Asgard_SDK.SDK
                 });
             }
             
-        }
-    }
-
-    public class AsgardBootstrap
-    {
-        private ServiceFactory _serviceFactory;
-        
-        public AsgardBootstrap()
-        {
-            _serviceFactory = ServiceFactory.Instance;
         }
     }
 }

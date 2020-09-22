@@ -1,4 +1,5 @@
 ﻿using System;
+using Asgard.Commands.Database;
 using Asgard.Providers.Game.World;
 using Asgard.Queue;
 using Shared.Protocol.Response.Game;
@@ -16,8 +17,7 @@ namespace Asgard.Commands.Game
         
         public void Execute(string id, string request)
         {
-            var worlds = new WorldProvider().GetWorlds();
-            
+            var worlds = new GetWorldsDatabaseCommand().Build().Execute();
             _commandQueueService.Queue(id, new GetWorldsResponse { worlds = worlds});
         }
     }

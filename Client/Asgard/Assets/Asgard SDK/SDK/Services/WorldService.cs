@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using BestHTTP.JSON;
+using Shared.Models.Game;
 using Shared.Protocol.Request.Game;
 using Shared.Protocol.Response;
 using Shared.Protocol.Response.Game;
@@ -10,6 +12,7 @@ namespace Asgard_SDK.SDK.Services
     public class WorldService : IBaseService
     {
         private NetworkService _networkService;
+        private Action<List<WorldDto>> _onGetWorldsResponse;
 
         public IBaseService Init(ref NetworkService networkService)
         {
@@ -54,8 +57,9 @@ namespace Asgard_SDK.SDK.Services
             _networkService.Send(request);
         }
 
-        public void GetWorlds(GetWorldsRequest request)
+        public void GetWorlds(GetWorldsRequest request, Action<List<WorldDto>> onGetWorldsResponse)
         {
+            _onGetWorldsResponse = onGetWorldsResponse;
             _networkService.Send(request);
         }
 
@@ -66,7 +70,8 @@ namespace Asgard_SDK.SDK.Services
 
         private void OnGetWorldsResponse(GetWorldsResponse response)
         {
-            Debug.Log("Get worlds response: "+response);
+            
+            _onGetWorldsResponse?.Invoke(response.worlds);
         }
     }
 }

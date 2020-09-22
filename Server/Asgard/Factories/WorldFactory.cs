@@ -34,6 +34,9 @@ namespace Asgard.Factories
 
         public void Register(string id, int worldId)
         {
+            // If the client is already registered, it's unregistered from other worlds
+            Unregister(id);
+            
             _worldList.First( world => world.GetWorld().id == worldId).Register(id);
         }
 

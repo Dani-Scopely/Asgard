@@ -10,7 +10,7 @@ namespace Asgard.Providers.Game.World
     public class WorldProvider : BaseProvider, IWorldProvider
     {
         private const string SqlGetWorldsCommand = "SELECT w.id as id, w.name as name, wm.translationKey as translationKey, w.numUsers as numUsers FROM Worlds w, WorldMode wm WHERE w.worldModeId = wm.id";
-        
+        private const string SqlUpdateWorldCommand = "UPDATE Worlds SET numUsers = @numUsers WHERE id = @id";
         private List<WorldDto> _mockData;
         
         public WorldProvider()
@@ -45,7 +45,14 @@ namespace Asgard.Providers.Game.World
 
         public void UpdateWorld(WorldDto worldDto)
         {
-            throw new System.NotImplementedException();
+            Open();
+            
+            var cmd = new MySqlCommand(SqlUpdateWorldCommand, _connection);
+            cmd.Parameters.AddWithValue("numUsers", worldDto.numUsers);
+            cmd.Parameters.AddWithValue("id", worldDto.id);
+            var result = cmd.ExecuteNonQuery();
+            
+            Close();
         }
 
         private void MockData()

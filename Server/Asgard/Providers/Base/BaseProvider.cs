@@ -10,7 +10,7 @@ namespace Asgard.Providers.Base
         
         protected BaseProvider(string url = null)
         {
-            _connection = new MySqlConnection(url ?? DatabaseConfig.Url);
+            _connection = new MySqlConnection(url ?? ServerConfig.Url);
         }
         
         protected void Open()

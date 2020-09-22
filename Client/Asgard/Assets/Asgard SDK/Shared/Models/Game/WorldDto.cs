@@ -1,5 +1,8 @@
-﻿namespace Shared.Models.Game
+﻿using System;
+
+namespace Shared.Models.Game
 {
+    [Serializable]
     public class WorldDto
     {
         public int id;
